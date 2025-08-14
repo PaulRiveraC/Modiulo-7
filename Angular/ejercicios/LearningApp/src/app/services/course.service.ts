@@ -6,8 +6,7 @@ import { COURSE_DATA } from '../data/course.data';
   providedIn: 'root'
 })
 export class CourseService {
-
-  private course: Course = COURSE_DATA;
+  private course: Course = COURSE_DATA[0];
 
   constructor() { }
 
