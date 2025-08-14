@@ -1,0 +1,18 @@
+<div>
+    <h2>Datos del Curso</h2>
+    <p><strong>ID del Curso:</strong> {{ course.id }}</p>
+    <p><strong>Nombre del Curso:</strong> {{ course.name }}</p>
+</div>
+
+<div>
+    <h3>Estudiantes Inscritos</h3>
+    <ul>
+        @for (student of course.students; track student.id) {
+            <li>
+                <strong>ID:</strong> {{ student.id }}, 
+                <strong>Cédula:</strong> {{ student.identification }}, 
+                <strong>Nombre:</strong> {{ student.name }} {{ student.surname }}
+            </li>
+        }
+    </ul>
+</div>
