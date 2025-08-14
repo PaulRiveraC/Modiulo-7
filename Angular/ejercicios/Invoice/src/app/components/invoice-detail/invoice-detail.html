@@ -1,0 +1,15 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>PRODUCTO</th>
+      <th>PRECIO UNITARIO</th>
+      <th>CANTIDAD</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of items; track $index) {
+      <invoice-item [item]="item"></invoice-item>
+    }
+  </tbody>
+</table>

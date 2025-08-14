@@ -1,0 +1,8 @@
+<h3>Estudiantes Inscritos</h3>
+<ul>
+  @for (student of students; track student.id) {
+  <li>
+    {{ student.name }} {{ student.surname }}
+  </li>
+}
+</ul>
